@@ -1,14 +1,26 @@
 from flask import Flask
 from flask_restful import reqparse, abort, Api, Resource
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
 api = Api(app)
 
-TODOS = {
-    'todo1': {'task': 'This is task 1'},
-    'todo2': {'task': 'This is task 2'},
-    'todo3': {'task': 'This is task 3'},
-}
+CORS(app, support_credentials=True)
+
+TODOS = [
+    {
+        'id': '1',
+        'task': 'This is task 1'
+    },
+    {
+        'id': '1',
+        'task': 'This is task 2'
+    },
+    {
+        'id': '1',
+        'task': 'This is task 3'
+    }
+]
 
 
 def abort_if_todo_doesnt_exist(todo_id):
