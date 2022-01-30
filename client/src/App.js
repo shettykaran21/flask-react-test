@@ -1,9 +1,9 @@
-import styles from './App.module.css';
+import './App.css';
 import TodoList from './components/TodoList';
 
 const App = () => {
   return (
-    <div className={styles.app}>
+    <div className="app">
       <TodoList />
     </div>
   );

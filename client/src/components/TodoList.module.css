@@ -7,15 +7,3 @@
   gap: 1rem;
   padding: 1rem;
 }
-
-.btn {
-  display: block;
-  background-color: #023e8a;
-  color: #fff;
-  font-family: inherit;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  margin: 0 auto;
-  cursor: pointer;
-}

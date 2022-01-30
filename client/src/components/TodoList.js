@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 
-import TodoItem from './TodoItem';
 import api from '../utils/api';
+import TodoItem from './TodoItem';
+import Button from './Button';
 import styles from './TodoList.module.css';
 
 const TodoList = () => {
@@ -32,7 +33,7 @@ const TodoList = () => {
               <TodoItem key={todo.task} todo={todo} setTodos={setTodos} />
             ))}
           </ul>
-          <button className={styles.btn}>New Todo</button>
+          <Button>New Todo</Button>
         </div>
       )}
     </>

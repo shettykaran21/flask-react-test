@@ -36,6 +36,7 @@ class Todo(Resource):
 
     def put(self, todo_id):
         args = parser.parse_args()
+        print(args)
         task = {'id': todo_id, 'task': args['task']}
         TODOS[todo_id] = task
         return TODOS, 201
