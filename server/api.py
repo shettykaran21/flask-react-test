@@ -7,20 +7,11 @@ api = Api(app)
 
 CORS(app, support_credentials=True)
 
-TODOS = [
-    {
-        'id': '1',
-        'task': 'This is task 1'
-    },
-    {
-        'id': '1',
-        'task': 'This is task 2'
-    },
-    {
-        'id': '1',
-        'task': 'This is task 3'
-    }
-]
+TODOS = {
+    'todo1': {'task': 'This is task 1'},
+    'todo2': {'task': 'This is task 2'},
+    'todo3': {'task': 'This is task 3'},
+}
 
 
 def abort_if_todo_doesnt_exist(todo_id):
