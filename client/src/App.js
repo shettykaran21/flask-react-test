@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+
+import TodoList from './components/TodoList';
 import api from './utils/api';
 
 const App = () => {
@@ -19,16 +21,10 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div style={{ maxWidth: '40rem', margin: '0 auto', padding: '3rem 0' }}>
       {isLoading && <p>Loading...</p>}
       {!isLoading && todos.length === 0 && <p>No todos</p>}
-      {!isLoading && todos.length > 0 && (
-        <ul>
-          {todos.map((todo) => (
-            <li key={todo.task}>{todo.task}</li>
-          ))}
-        </ul>
-      )}
+      {!isLoading && todos.length > 0 && <TodoList todos={todos} />}
     </div>
   );
 };

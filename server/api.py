@@ -49,7 +49,7 @@ class TodoList(Resource):
         todo_id = int(max(TODOS.keys()).lstrip('todo')) + 1
         todo_id = 'todo%i' % todo_id
         TODOS[todo_id] = {'task': args['task']}
-        return TODOS[todo_id], 201
+        return TODOS, 201
 
 
 api.add_resource(TodoList, '/todos')

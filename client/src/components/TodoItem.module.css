@@ -1,0 +1,19 @@
+.item {
+  list-style: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.icon {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
