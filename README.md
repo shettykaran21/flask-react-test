@@ -2,7 +2,7 @@
 
 ## Step 1: Create a virtual environment and install dependencies
 
-I am using conda to manage virtual environments. Other alternatives like venv, virtualenv or pipenv can be used instead.
+I am using miniconda to manage virtual environments. Other alternatives like venv, virtualenv or pipenv can be used instead.
 
 ```
 conda create --name flask-rest python=3.8
