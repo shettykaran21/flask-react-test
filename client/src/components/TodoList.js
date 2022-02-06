@@ -38,7 +38,7 @@ const TodoList = () => {
       {isLoading && <p>Loading...</p>}
       {!isLoading && todos.length === 0 && <p>No todos</p>}
       {!isLoading && todos.length > 0 && (
-        <div>
+        <div className={styles.container}>
           <ul className={styles.list}>
             {todos.map((todo) => (
               <TodoItem key={todo.task} todo={todo} setTodos={setTodos} />
