@@ -13,7 +13,7 @@ conda activate flask-rest
 ```
 
 ```
-pip install flask flask-restful flask-cors
+pip install -r requirements.txt
 ```
 
 ## Step 2: Export variables
